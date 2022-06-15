@@ -1,0 +1,110 @@
+@import "../../variables";
+
+.header {
+  border: $light-grey-border;
+  background: $snowy-grey;
+  padding: $table-header-padding;
+
+  td:not([class]), td[class=""], td.title, td[class="w-25"] {
+    color: $black-text;
+    padding: 20px 32px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .title {
+    color: $black-text;
+    font-size: 20px!important;
+    font-weight: bold;
+    line-height: 36px;
+
+    &:not(td) {
+      display: flex;
+    }
+  }
+
+  & + table > .body, & + .body {
+    border-top: none!important;
+  }
+}
+
+.body {
+  background: $white;
+  border: $light-grey-border;
+
+  &.shadowed {
+    border: none;
+    box-shadow: $base-shadow;
+  }
+
+  td:not([class]), td[class=""], td[class="pr-0"], td[class="pl-0"] {
+    padding: 12px 32px;
+    color: $black-text;
+    font-size: 14px;
+    // word-break: break-word;
+
+    &:not([valign]) {
+      vertical-align: top;
+    }
+  }
+
+  & > tr:first-child:not([class]) td, & > tr:first-child[class=""] td {
+    padding-top: 24px;
+  }
+
+  & > tr:last-child:not([class]) td, & > tr:last-child[class=""] td {
+    padding-bottom: 24px;
+  }
+
+  table:first-child tbody tr:first-child td {
+    padding-top: 24px;
+  }
+
+  table:last-child tbody tr:last-child td {
+    padding-bottom: 24px;
+  }
+}
+
+.narrowrow {
+  padding: 3px 32px;
+  color: #403F3F;
+  font-size: 14px;
+}
+
+
+
+.body, .header {
+  &.small {
+    padding: $table-small-header-padding;
+
+    td:not([class]), td[class=""], td.title, td[class="w-25"] {
+      padding: $table-small-header-padding;
+    }
+  }
+}
+
+body > table.draggable {
+  transition: 0s!important;
+  opacity: 0.7;
+  background: white;
+  border: $light-grey-border;
+  height: 0!important;
+  transform: translateY(-12px);
+
+  td {
+    padding: 24px 32px;
+    color: $black-text;
+    font-size: 14px;
+    word-break: break-word;
+
+    &:not([valign]) {
+      vertical-align: top;
+    }
+  }
+}
+
+.nowrap {
+  td {
+    white-space: nowrap;
+  }
+}

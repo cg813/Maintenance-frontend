@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+
+.breadcrumb {
+  font-size: 14px;
+  color: $light-blue;
+  cursor: default;
+  white-space: nowrap;
+
+  &:not(:last-child):after {
+    content: '>';
+    margin: 0 12px;
+  }
+
+  &:last-child {
+    color: $black-text;
+  }
+}
+
+.vertical {
+  &>div {
+    transform: translateX(-100%) rotate(-90deg);
+    transform-origin: top right;
+    display: flex;
+    height: 53px;
+    align-items: center;
+    padding: 20px
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    color: $black-text;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child):after {
+      display: inline-block;
+      content: url("../../../assets/asset-arrow.svg");
+      transform: rotate(90deg);
+    }
+
+    &:before {
+      display: inline-block;
+      margin-right: 12px;
+    }
+
+    &.home:before {
+      content: url("../../../assets/asset-home.svg");
+    }
+    &.factory:before {
+      content: url("../../../assets/asset-factory.svg");
+    }
+    &.scrap:before {
+      content: url("../../../assets/asset-scrap.svg");
+    }
+    &.machine:before {
+      content: url("../../../assets/asset-machine.svg");
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../../styles/variables";
+
+.left {
+  position: absolute;
+  font-size: 12px;
+  color: $grey;
+  right: 0;
+  bottom: 0;
+}
+
+.error {
+  color: $red;
+}

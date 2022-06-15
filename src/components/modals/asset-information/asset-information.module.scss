@@ -1,0 +1,17 @@
+.closebutton {
+    margin-left: auto;
+}
+.propname {
+    display: block;
+    font-weight: bold;
+}
+.propvalue {
+    display: block;
+}
+.property {
+    font-size: 14px;
+    text-align: center;
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

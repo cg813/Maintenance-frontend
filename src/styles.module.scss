@@ -1,0 +1,28 @@
+@import "styles/variables";
+
+.content {
+  position: relative;
+  margin-top: $header-height;
+  padding: $content-padding;
+  background: $snowy-grey;
+  min-height: $content-min-height;
+  max-width: 100vw;
+  //overflow-x: hidden;
+}
+
+.page {
+  margin-left: $tree-width;
+  display: flex;
+  flex-wrap: wrap;
+
+  &>* {
+    width: $page-content-width;
+    min-width: $page-content-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &.collapsed {
+    margin-left: 53px;
+  }
+}

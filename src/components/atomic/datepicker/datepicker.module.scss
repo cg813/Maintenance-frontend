@@ -1,0 +1,76 @@
+@import "../../../styles/variables";
+
+$padding: $button-padding calc(#{$button-padding} + #{$button-height}) $button-padding $button-padding;
+
+.datepicker {
+  background: $white;
+  position: relative;
+  border: $light-grey-border;
+  height: $button-height;
+  font-size: 12px;
+  color: $black-text;
+  padding: $padding;
+  min-width: calc(150px + #{$button-height} + 2px);
+
+  &.error {
+    border-color: $red;
+  }
+}
+
+.wrapper {
+  position: absolute;
+  border: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &>*:first-child {
+    height: 100%;
+  }
+}
+
+.input {
+  width: 100%;
+  height: 100%;
+  padding: $padding;
+  cursor: default;
+  border: none;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.button {
+  outline: none;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  right: 0px;
+  top: 0px;
+  width: $button-height;
+  height: $button-height;
+  background: #1D4F91;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    transition: .3s;
+    content: url("../../../assets/dropdown-arrow.svg");
+  }
+
+  &.calendar:after {
+    margin-top: 5px;
+    content: url("../../../assets/calendar.svg");
+  }
+
+  &.collapsed:after {
+    transform: rotate(180deg);
+  }
+}

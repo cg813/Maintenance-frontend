@@ -1,0 +1,86 @@
+@import "../../../styles/variables";
+
+.dropdown {
+  display: flex;
+  position: relative;
+}
+
+.arrow {
+  display: flex;
+  height: $button-height;
+  width: $button-height;
+  min-width: $button-height;
+  background: $dark-blue;
+  cursor: pointer;
+  user-select: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:after {
+    transition: .3s;
+    content: '';
+    display: block;
+    width: 12px;
+    height: 7px;
+    background: url('../../../assets/dropdown-arrow.svg');
+    margin: auto;
+  }
+}
+
+.opened .arrow:after {
+  transform: rotate(180deg);
+}
+
+.label {
+  display: block;
+  flex: 1;
+  height: 36px;
+  border: $light-grey-border;
+  background: $white;
+  padding: $dropdown-padding;
+  font-size: 12px;
+  width: calc(100% - #{$button-height});
+}
+
+.transparent {
+  .label {
+    border: none;
+    min-width: 0;
+    padding-right: 0;
+  }
+
+  .arrow {
+    background: none;
+    display: flex;
+    align-items: center;
+
+    &:after {
+      content: url('../../../assets/arrow-down-grey.svg');
+      width: unset;
+      height: 100%;
+    }
+  }
+}
+
+.body {
+  white-space: nowrap;
+  position: absolute;
+  overflow-x: auto;
+  width: calc(100% + 2px);
+  max-height: 300px;
+  padding: $dropdown-padding;
+  overflow: auto;
+  background: $white;
+  left: -1px;
+  top: 100%;
+  border: $light-grey-border;
+  box-shadow: $base-shadow;
+  z-index: 1;
+}
+
+.autowidth {
+  min-width: unset;
+}

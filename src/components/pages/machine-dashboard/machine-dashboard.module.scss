@@ -1,0 +1,10 @@
+@import "../../../styles/variables";
+
+.content {
+  min-width: 841px;
+  width: calc(100vw - #{$tree-width}) !important;
+}
+
+.collapsed {
+  width: calc(100vw - #{$tree-width-collapsed}) !important;
+}

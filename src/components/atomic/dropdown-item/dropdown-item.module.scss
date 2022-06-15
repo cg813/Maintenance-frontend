@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.item {
+  font-size: 14px;
+  margin-right: -18px;
+  margin-left: -14px;
+  padding: $dropdown-padding;
+  cursor: pointer;
+  background: $white;
+  color: $black-text;
+  transition: .05s;
+  user-select: none;
+
+  &:hover {
+    background: $snowy-grey;
+  }
+
+  &.disabled {
+    cursor: default;
+    color: $grey;
+
+    &:not(.selected):hover {
+      background: $white;
+    }
+  }
+
+  &.selected {
+    background: $light-blue;
+    color: $white-transparency;
+
+    &:not(.disabled):hover {
+      opacity: 0.9;
+    }
+
+    &.disabled {
+      background: $grey;
+    }
+  }
+}

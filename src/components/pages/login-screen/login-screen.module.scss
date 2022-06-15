@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.form {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid lightgrey;
+    padding: 100px;
+}
+
+.button {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+}
+
+.input {
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.username {
+    margin: 10px auto;
+    padding: 5px;
+    width: 188px;
+}

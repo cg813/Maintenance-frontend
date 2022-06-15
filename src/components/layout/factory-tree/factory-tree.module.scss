@@ -1,0 +1,145 @@
+@import "../../../styles/variables";
+
+* {
+  transition: .3s;
+}
+
+.item, .location {
+  color: $black-text;
+  height: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.item {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.arrow {
+  content: url("../../../assets/asset-arrow.svg");
+  transform: rotate(180deg);
+
+  &.collapsed {
+    transform: rotate(90deg);
+  }
+}
+
+.selected .arrow {
+  content: url("../../../assets/asset-arrow-white.svg");
+}
+
+div:not(.tree).collapsed {
+  display: none;
+}
+
+.location {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.factory {
+  content: url('../../../assets/asset-factory.svg');
+  width: 24px;
+  height: 24px;
+}
+
+.home {
+  content: url('../../../assets/asset-home.svg');
+}
+
+.machine {
+  content: url('../../../assets/asset-machine.svg');
+}
+
+.scrap {
+  content: url('../../../assets/asset-scrap.svg');
+}
+
+.selected {
+  background: $dark-blue;
+  color: $white;
+  font-weight: bold;
+
+  button {
+    color: $white;
+  }
+
+  .factory {
+    content: url('../../../assets/asset-factory-white.svg');
+    width: 24px;
+    height: 24px;
+  }
+
+  .home {
+    content: url('../../../assets/asset-home-white.svg');
+  }
+
+  .machine {
+    content: url('../../../assets/asset-machine-white.svg');
+  }
+
+  .scrap {
+    content: url('../../../assets/asset-scrap-white.svg');
+  }
+}
+
+.all {
+  align-items: center;
+  color: $black-text;
+  display: flex;
+  font-weight: bold;
+  height: 64px;
+  padding-left: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &.selected {
+    background: $dark-blue;
+    color: $white;
+  }
+}
+
+.tree {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $tree-width;
+  height: 100vh;
+  padding-top: $header-height;
+  background: $white;
+  box-shadow: $tree-shadow;
+  // overflow-x hidden, otherwise scroll bar appears when collapsing sidebar
+  transition: width .3s;
+  z-index: 999;
+
+  &.collapsed {
+    width: 53px;
+  }
+}
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 380px;
+  width: 360px;
+  clip-path: polygon(0% 36.84%, 11.11% 26.32%, 72.22% 26.32%, 100% 0%, 100% 84.21%, 83.33% 100%, 0% 100%);
+  background: #F5F5F5;
+  z-index: -1;
+}
+
+.collapseButton {
+  top: 84px;
+  right: 0;
+  transform: translate(50%, -50%) rotate(90deg);
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  background: $dark-blue;
+
+  .collapsed {
+    transform: rotate(180deg);
+  }
+}

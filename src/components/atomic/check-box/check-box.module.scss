@@ -1,0 +1,16 @@
+.checkbox {
+  background-image: url("../../../assets/check-box-outline-blank.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  cursor: pointer;
+}
+
+.checked {
+  background-image: url("../../../assets/check-box.svg");
+}
+
+.disabled {
+  cursor: default;
+}

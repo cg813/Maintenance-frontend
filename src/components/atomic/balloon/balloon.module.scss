@@ -1,0 +1,64 @@
+@import "../../../styles/variables";
+
+.balloon {
+  width: 141px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 56px 25px 54px 35px;
+  cursor: pointer;
+  transition: opacity .3s;
+
+  &.black {
+    background: transparent url("../../../assets/balloon-black.svg");
+  }
+
+  &.red {
+    background: transparent url("../../../assets/balloon-red.svg");
+  }
+
+  &.green {
+    background: transparent url("../../../assets/balloon-green.svg");
+  }
+
+  &.yellow {
+    background: transparent url("../../../assets/balloon-yellow.svg");
+  }
+
+  &.hidden {
+    opacity: .3;
+  }
+
+  &.disabled {
+    cursor: default;
+  }
+}
+
+.goarrow {
+  display: block;
+  width: 17px;
+  height: 11px;
+  background: url("../../../assets/arrow-right.svg");
+  transition: .3s;
+}
+
+.active .goarrow {
+  width: 23px;
+  height: 23px;
+  background: url("../../../assets/cross.svg");
+}
+
+.label {
+  color: $white;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.number {
+  color: $white;
+  font-weight: bold;
+  font-size: 24px;
+  height: 28px;
+}

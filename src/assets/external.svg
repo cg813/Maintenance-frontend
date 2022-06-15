@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14">
+  <g id="Gruppe_2132" data-name="Gruppe 2132" transform="translate(-573 -417)">
+    <g id="Pfad_896" data-name="Pfad 896" transform="translate(573 417)" fill="none">
+      <path d="M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" stroke="none"/>
+      <path d="M 7 1 C 3.691590309143066 1 1 3.691590309143066 1 7 C 1 10.30840969085693 3.691590309143066 13 7 13 C 10.30840969085693 13 13 10.30840969085693 13 7 C 13 3.691590309143066 10.30840969085693 1 7 1 M 7 0 C 10.86598968505859 0 14 3.134010314941406 14 7 C 14 10.86598968505859 10.86598968505859 14 7 14 C 3.134010314941406 14 0 10.86598968505859 0 7 C 0 3.134010314941406 3.134010314941406 0 7 0 Z" stroke="none" fill="#1d4f91"/>
+    </g>
+    <rect id="Rechteck_2906" data-name="Rechteck 2906" width="4" height="8" transform="translate(584 420)" fill="#fff"/>
+    <g id="Gruppe_2129" data-name="Gruppe 2129" transform="translate(577.5 422.093)">
+      <path id="Pfad_876" data-name="Pfad 876" d="M0,0,2.581,2.815,5.161,0" transform="translate(4.194 4.568) rotate(-90)" fill="none" stroke="#1d4f91" stroke-linecap="round" stroke-width="1"/>
+      <line id="Linie_184" data-name="Linie 184" x1="6.506" transform="translate(0 1.988)" fill="none" stroke="#1d4f91" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+@import 'react-redux-toastr/src/styles/index';
+@import "variables";
+
+.comma-separated {
+  &:not(:last-child):after {
+    content: ', ';
+    margin-right: 4px;
+  }
+}
+
+.status-black {
+  color: $black-text;
+}
+
+.status-yellow {
+  color: $yellow;
+}
+
+.status-red {
+  color: $red;
+}
+
+.status-green {
+  color: $green;
+}
+
+.link {
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: #1D4F91;
+  opacity: 0.87;
+}
+
+.indicator-scheduled, .indicator-completed, .indicator-dueSoon, .indicator-overdue {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  max-width: 8px;
+  border-radius: 50%;
+}
+
+.indicator-scheduled {
+  background: $black-text;
+}
+
+.indicator-dueSoon {
+  background: $yellow;
+}
+
+.indicator-overdue {
+  background: $red;
+}
+
+.indicator-completed {
+  background: $green;
+}
+
+.z-10000 {
+  z-index: 10000;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.outline-none {
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.z-index-minus {
+  z-index: -1;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.mw-106 {
+  max-width: 106px;
+}
+
+.pb-10 {
+  padding-bottom: 4.5rem!important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

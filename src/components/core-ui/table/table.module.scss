@@ -1,0 +1,69 @@
+@import "../../../styles/variables";
+
+.columns {
+  border-top: none !important;
+
+  td {
+    padding: 20px 32px;
+    color: $black-text;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:first-child {
+      padding-left: 43px;
+    }
+  }
+
+  &.sortable {
+    td {
+      cursor: pointer;
+      position: relative;
+      padding-right: 16px;
+      white-space: nowrap;
+
+      span {
+        transform: translateY(2px);
+        margin-left: 2px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+      }
+
+      .asc, .desc {
+        content: url("../../../assets/sorting_arrow.svg");
+      }
+
+      .asc {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.body {
+  td {
+    padding: 10px 32px;
+    color: $black-text;
+    font-size: 14px;
+    line-height: 32px;
+
+    &:first-child {
+      padding-left: 43px;
+    }
+  }
+
+  tr:first-child {
+    td {
+      padding-top: 20px;
+    }
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.scrollable {
+  overflow-x: auto;
+  //overflow-y: visible;
+}

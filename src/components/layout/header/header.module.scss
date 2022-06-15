@@ -1,0 +1,50 @@
+@import "../../../styles/variables";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: $white;
+  height: $header-height;
+  border-bottom: $header-border;
+  z-index: $header-z-index;
+}
+
+.logo {
+  content: url("../../../assets/main-logo.svg");
+  height: 25px;
+}
+
+.logoText {
+  font-size: 20px;
+  color: $dark-blue;
+}
+
+.icon {
+  max-width: 30px;
+  max-height: 30px;
+  filter: invert(1);
+}
+
+.arrow {
+  transform: rotate(90deg);
+}
+
+.collapsed {
+  transform: rotate(-90deg);
+}
+
+.link {
+  color: $dark-blue;
+  font-size: 14px;
+  font-weight: normal;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.active {
+    font-weight: bold;
+  }
+}

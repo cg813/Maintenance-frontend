@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.body {
+  transition: height .3s;
+  overflow-y: auto;
+  max-height: 320px;
+
+  &.collapsed {
+    transform: none;
+    height: 0!important;
+  }
+}
+
+.collapsed {
+  transform: rotate(180deg);
+}
+
+.divider {
+  display: block;
+  height: 1px;
+  background: $light-grey;
+}

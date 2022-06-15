@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.button {
+  height: unset;
+  max-width: 144px;
+  min-width: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.name {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $black-text;
+}
+
+.file {
+  margin-left: -1rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+

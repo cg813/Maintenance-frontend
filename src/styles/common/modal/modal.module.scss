@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.hdiv {
+  display: block;
+  border-bottom: $light-grey-border;
+}
+
+.header, .footer {
+  display: flex;
+  padding: 12px 34px 15px 34px;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.header {
+  margin-bottom: 15px;
+  border-bottom: $header-border;
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: $black-text;
+  }
+}
+
+.body {
+  padding: 20px 34px;
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+
+  .header + & {
+    max-height: calc(100vh - 200px);
+  }
+
+  &>.hdiv {
+    margin: 38px -34px 16px -34px;
+  }
+}
+
+.footer {
+  margin-top: 15px;
+  background-color: $snowy-grey;
+}
+
+.close {
+  margin-right: -10px;
+}

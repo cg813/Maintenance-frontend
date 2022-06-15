@@ -1,0 +1,44 @@
+@import "../../variables";
+
+.input {
+  border: $light-grey-border;
+  height: $button-height;
+  width: $button-width;
+  padding: $button-padding;
+  font-size: 12px;
+  color: $black-text;
+
+  &::placeholder {
+    color: $light-grey;
+  }
+}
+
+.textarea {
+  border: $light-grey-border;
+  width: 478px;
+  height: 40px;
+  padding: $button-padding;
+  font-size: 12px;
+  color: $black-text;
+
+  &::placeholder {
+    color: $light-grey;
+  }
+}
+
+.error {
+  border-color: $red !important;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: bold;
+  color: $black-text;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.w230 {
+  width: 230px;
+  max-width: 230px;
+}

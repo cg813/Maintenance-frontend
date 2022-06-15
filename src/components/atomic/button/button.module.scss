@@ -1,0 +1,105 @@
+@import '../../../styles/variables';
+
+.button {
+  font-size: $button-font-size;
+  padding: 0 $button-padding;
+  height: $button-height;
+  min-width: $button-width;
+}
+
+.common {
+  background: $light-blue;
+  color: $white-transparency;
+  font-weight: bold;
+  border: none;
+  font-weight: bold;
+
+  &:disabled {
+    background: $grey;
+  }
+}
+
+.outline {
+  background: transparent;
+  border: $grey-border;
+  color: $grey;
+  width: unset;
+}
+
+.reference {
+  min-width: unset;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: none;
+  display: flex;
+
+  &:after {
+    content: '';
+    display: block;
+    margin: auto;
+    width: 17px;
+    height: 11px;
+    background: url("../../../assets/arrow-right.svg");
+  }
+}
+
+.square {
+  min-width: $button-height;
+  height: $button-height;
+  width: $button-height;
+  display: flex;
+  padding: 0;
+  background: $light-blue;
+  color: $white-transparency;
+  font-weight: bold;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.red {
+  background-color: $red;
+}
+
+.yellow {
+  background-color: $yellow;
+}
+
+.black {
+  background-color: $black-text;
+}
+
+.green {
+  background-color: $green;
+}
+
+.transparent {
+  color: $black-text;
+  background-color: transparent;
+}
+
+.dark {
+  background-color: $dark-blue;
+}
+
+.autowidth {
+  width: unset;
+  min-width: unset;
+}
+
+.link {
+  border: none;
+  background: transparent;
+  color: $black-text;
+  text-decoration: underline;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active, &:focus {
+    opacity: .8;
+  }
+}
